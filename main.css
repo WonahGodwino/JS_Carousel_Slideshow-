@@ -1,0 +1,107 @@
+* {
+    box-sizing:border-box;
+  }
+
+  body, html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+    background-color: black;
+    color: #fff;
+    letter-spacing: normal;
+    scroll-behavior: smooth;
+  }
+  h2 {
+    text-align: center;
+    color: antiquewhite;
+    letter-spacing: .2rem;
+    font-size: 2.7rem;
+    text-shadow: 2px 2px 10px #00ff;
+  }
+  
+  .slideshow-container {
+    max-width: 70rem;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 4rem;
+    overflow: hidden;
+    height: 100%;
+
+  }
+  
+
+  .mySlides {
+    display: flex;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    width: 1000%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 10%;
+    margin 0 0.25rem;
+    padding: 16px;
+    color: #fff;
+    font-size: 1.75rem;
+    transition: 0.5s ease-in-out;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 1px;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #bbb;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #cccc;
+  }
+  
+  
+  h4 {
+    bottom: 1.5rem;
+    color: antiquewhite;
+    text-align: center;
+    text-shadow: 2px 2px 1opx #00ff;
+    letter-spacing: .2rem;
+    margin-top: 2rem;
+  }
+  
+  
+  @media (max-width:768px){
+    
+  .slideshow-container {
+      height:306px;
+   }
+  }
